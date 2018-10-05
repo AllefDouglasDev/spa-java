@@ -8,21 +8,29 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 public class WTela03 extends WPanel {
 	
-	private JButton btnTela01;
-	private JButton btnTela02;
-	private JButton btnTela04;
-	
 	private JLabel lblEstouNaTela;
+
+	private JButton btnTela01;
+	
+	private JButton btnTela02;
+	
+	private JButton btnTela04;
 	
 	/**
 	 * Create the panel.
 	 */
 	public WTela03(JFrame f) {
 		super(f);
+	}
+
+	@Override
+	public void panelHeader() { }
+
+	@Override
+	public void panelBody() {
 		panelBody.setBackground(Color.MAGENTA);
 		
 		lblEstouNaTela = new JLabel("Estou na tela 03");
@@ -30,14 +38,6 @@ public class WTela03 extends WPanel {
 		lblEstouNaTela.setFont(new Font("Tahoma", Font.PLAIN, 23));
 		lblEstouNaTela.setBackground(Color.WHITE);
 		panelBody.add(lblEstouNaTela);
-	}
-
-	@Override
-	public void panelHeader() {
-	}
-
-	@Override
-	public void panelBody() {
 	}
 
 	@Override

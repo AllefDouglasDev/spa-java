@@ -1,9 +1,6 @@
 package app;
 
-import java.awt.GridLayout;
-
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -13,21 +10,17 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.FlowLayout;
 
 public class WTela01 extends WPanel {
 	
-	private JButton btnTela02;
-	
 	private JLabel lblEstouNaTela;
+	
 	private JButton btnTela03;
+	
 	private JButton btnTela04;
-	private JButton btnNewButton;
-	private JButton btnNewButton_1;
-	private JButton btnNewButton_2;
-	private JButton btnNewButton_3;
-	private JButton btnNewButton_4;
-	private JButton button;
-	private JLabel lblNewLabel;
+	
+	private JButton btnTela02;
 
 	/**
 	 * Create the panel.
@@ -37,15 +30,19 @@ public class WTela01 extends WPanel {
 	}
 
 	@Override
-	public void panelHeader() {
-	}
+	public void panelHeader() { }
 
 	@Override
 	public void panelBody() {
-		panelBody.setBackground(Color.BLUE);
-		panelBody.setLayout(new GridLayout(4, 3, 0, 0));
+		panelBody.setBackground(Color.DARK_GRAY);
+		panelBody.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
-		
+
+		lblEstouNaTela = new JLabel("Estou na tela 01");
+		lblEstouNaTela.setForeground(Color.WHITE);
+		lblEstouNaTela.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		lblEstouNaTela.setBackground(Color.WHITE);
+		panelBody.add(lblEstouNaTela);
 	}
 
 	@Override

@@ -47,8 +47,6 @@ public class WApp {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new CardLayout(0, 0));
 		frame.setLocationRelativeTo(null);
-		WTela06 tela06 = new WTela06(frame);
-		addWindow(tela06);
 		
 		WTela01 tela01 = new WTela01(frame);
 		addWindow(tela01);
@@ -62,8 +60,10 @@ public class WApp {
 		WTela04 tela04 = new WTela04(frame);
 		addWindow(tela04);
 		
-		tela06.putPanel("tela01", tela01);
-		
+		// Adicionando dependencia de telas para cada uma das telas
+		// A tela01 precisa acessar a tela02, tela03 e tela04
+		// Assim, passo uma referencia do tipo String
+		// Para buscar ela mais facilmente dentro da classe
 		tela01.putPanel("tela02", tela02);
 		tela01.putPanel("tela03", tela03);
 		tela01.putPanel("tela04", tela04);

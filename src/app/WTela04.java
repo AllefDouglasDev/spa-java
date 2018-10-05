@@ -8,18 +8,16 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.JTextArea;
 
 public class WTela04 extends WPanel {
 
-	private JButton btnTela01;
-	private JButton btnTela02;
-	private JButton btnTela03;
-	
 	private JLabel lblEstouNaTela;
+
+	private JButton btnTela01;
 	
+	private JButton btnTela02;
+	
+	private JButton btnTela03;
 	
 	/**
 	 * Create the panel.
@@ -27,10 +25,9 @@ public class WTela04 extends WPanel {
 	public WTela04(JFrame f) {
 		super(f);
 	}
+	
 	@Override
-	public void panelHeader() {
-		
-	}
+	public void panelHeader() { }
 
 	@Override
 	public void panelBody() {

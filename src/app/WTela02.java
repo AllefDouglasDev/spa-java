@@ -1,24 +1,25 @@
 package app;
 
-import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JTextField;
 
 public class WTela02 extends WPanel {
+
+	private JLabel lblEstouNaTela;
 	
 	private JButton btnTela01;
+	
 	private JButton btnTela03;
+	
 	private JButton btnTela04;
 	
-	private JLabel lblEstouNaTela;
 	private JTextField textField;
 
 	/**
