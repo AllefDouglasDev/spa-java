@@ -12,8 +12,10 @@ public class WApp {
 
 	private JFrame frame;
 
+	// Telas inseridas no frame principal
 	private List<JPanel> telas;
 	
+	// Controlador para NÃO alterar a primeira tela como visivle(false)
 	private int first;
 	/**
 	 * Launch the application.
@@ -83,6 +85,11 @@ public class WApp {
 		build();
 	}
 	
+	/**
+	 * Adiciona a tela ao frame principal
+	 * 
+	 * @param p
+	 */
 	private void addWindow(JPanel p) {
 		if (null == telas)
 			telas = new ArrayList<>();
@@ -90,6 +97,9 @@ public class WApp {
 		frame.getContentPane().add(p);
 	}
 	
+	/**
+	 * Altera todas as telas como visible(false), menos a primeira
+	 */
 	private void build() {
 		first = 0;
 		telas.forEach(p -> {
